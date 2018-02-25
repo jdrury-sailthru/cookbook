@@ -1,0 +1,12 @@
+extends layout
+
+include mixins/_recipeForm
+
+block content
+    h1 Add Recipe
+
+    .go-back
+        a(href="/recipes") Recipes
+        span  / add recipe
+
+    +recipeForm()

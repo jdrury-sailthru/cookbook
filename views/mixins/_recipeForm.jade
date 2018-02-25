@@ -1,0 +1,12 @@
+mixin recipeForm(recipe = {})
+
+    form.recipe-form(action="/recipes/#{recipe.id || '' }/update" method="POST")
+        .field
+            label(for="name") Name
+            input(type="text" name="name" value=recipe.name)
+
+        .field
+            label(for="desc") Description
+            textarea(name="desc")= recipe.desc
+
+        button(type="submit" value="Save") Save

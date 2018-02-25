@@ -1,0 +1,23 @@
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #fefefe;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 12px 0;
+    padding: 12px;
+}
+
+.recipe-card .edit-recipe-link {
+    color: #333333;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.recipe-card .edit-recipe-link:hover {
+    /*text-decoration: underline;*/
+    box-shadow: 0 1px #333;
+}

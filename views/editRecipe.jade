@@ -1,0 +1,16 @@
+extends layout
+
+include mixins/_recipeForm
+
+block content
+    h1 Edit Recipe
+
+    .go-back
+        a(href="/recipes") Recipes
+        span  / edit recipe
+
+    form(type="hidden" action="/recipes/#{recipe.id}/delete" method="POST")
+        input(type="hidden" value=recipe.id)
+        button(type="submit") Delete
+
+    +recipeForm(recipe)

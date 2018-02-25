@@ -1,0 +1,22 @@
+.recipes-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.add-recipe-link {
+    margin-left: auto;
+
+    button {
+        padding: 8px;
+        background: #acfd6fd1;
+        text-transform: uppercase;
+        border: 1px solid #333;
+
+        .fa-plus:before {
+            color: #000;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}

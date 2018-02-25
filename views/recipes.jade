@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+
+    .recipes-gallery
+        a.add-recipe-link(href="/add")
+            button
+                i.fa.fa-plus Add Recipe
+
+        each recipe in recipes
+            .recipe-card
+                a.edit-recipe-link(href="/recipes/#{recipe.id}/edit" title="Edit Recipe") Edit
+                h2= recipe.name
+                p= recipe.desc
+
